@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 void main() {
   runApp(
     DevicePreview(
+      enabled: false,
       builder: (context) => MyApp(),
     ),
   );
