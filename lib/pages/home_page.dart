@@ -169,7 +169,17 @@ class HomePage extends StatelessWidget {
                                     child: Icon(Icons.add, color: Colors.white),
                                   ),
                                 ),
-
+                                Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 10),
+                                  child: Text(
+                                    "20°",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  ),
+                                ),
                                 SizedBox(
                                   width: 35,
                                   height: 35,
@@ -177,7 +187,28 @@ class HomePage extends StatelessWidget {
                                     color: Color(0xff3D3E40),
                                     padding: EdgeInsets.zero,
                                     onPressed: () {},
-                                    child: Icon(CupertinoIcons.minus, color: Colors.white),
+                                    child: Icon(CupertinoIcons.minus,
+                                        color: Colors.white),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 10),
+                            Row(
+                              children: [
+                                Icon(
+                                  CupertinoIcons.flag,
+                                  color: Color(0xff92B1E2),
+                                  size: 20,
+                                ),
+                                Expanded(
+                                  child: Text(
+                                    " Cooling",
+                                    style: TextStyle(
+                                      color: Color(0xff92B1E2),
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w700,
+                                    ),
                                   ),
                                 ),
                               ],
